@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/miama");
 
 .inter-font {
   font-family: "Inter", sans-serif;
@@ -8,35 +9,207 @@
   font-variation-settings: "slnt" 0;
 }
 
+.miama-font {
+  font-family: "Miama", sans-serif;
+  font-weight: 400;
+}
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: rgba(255, 255, 255, 0.5);
+  --tertiary-color: #e6533c;
+  --primary-font-size: 1.125rem;
+}
+
 /* Shared Styles */
 * {
   margin: 0;
+}
+
+.background-gray {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgb(43, 40, 40),
+    rgb(17, 17, 17) 100%
+  );
 }
 
 .display-flex {
   display: flex;
 }
 
-/* Navbar */
-.navbar {
-  justify-content: space-between;
-  align-items: center;
+.btn-primary {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  padding: 16px 46.5px;
+  font-size: var(--primary-font-size);
+  font-weight: 600;
+  border-radius: 42px;
+  border: none;
 }
 
-.brand {
-  color: #e6533c;
+.btn-secondary {
+  color: var(--primary-color);
+  background-color: transparent;
+  padding: 16px 48px;
+  font-size: var(--primary-font-size);
+  font-weight: 600;
+  border-radius: 42px;
+  border: 1px solid var(--primary-color);
+}
+
+header {
+  max-width: 100%;
+  max-height: 700px;
+}
+
+/* Navbar */
+.navbar {
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 3.6rem;
+}
+
+.brand-name {
+  color: var(--tertiary-color);
   font-size: 2.25rem;
   font-weight: 800;
   font-style: italic;
+}
+
+.nav-links {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 465px;
+  height: 46px;
+  padding: 0;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 39px;
 }
 
 .nav-link {
   text-decoration: none;
   font-size: 1.125rem;
   font-weight: 400;
+  color: var(--primary-color);
 }
 
 .nav-item {
   list-style: none;
-    
+  margin-right: 3rem;
+}
+
+.span {
+  color: var(--primary-color);
+  background-color: var(--tertiary-color);
+  padding: 8px 20px;
+  border-radius: 46px;
+  border: none;
+  font-weight: 500;
+  margin: 4px;
+  margin-right: 47px;
+}
+
+/* Banner */
+.banner {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.banner-content {
+  width: 520px;
+  margin-top: 96px;
+  margin-bottom: 76px;
+}
+
+.banner-title {
+  color: var(--primary-color);
+  font-size: 4.875rem;
+  font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 1.75rem;
+}
+
+.banner-content span {
+  font-size: 10rem;
+  line-height: 0.4;
+  position: relative;
+  z-index: 1;
+}
+
+.banner-description {
+  color: var(--secondary-color);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 1.75rem;
+}
+
+.btn-banner {
+  gap: 14px;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.element1 {
+  position: absolute;
+  top: 125px;
+  left: 230px;
+  width: 193px;
+  height: 98px;
+  padding: 17px;
+  color: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  z-index: 1;
+}
+
+.element1 span {
+  color: var(--primary-color);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.element2 {
+  position: absolute;
+  top: 421px;
+  right: 256px;
+  width: 206px;
+  height: 96px;
+  padding: 17px;
+  color: rgba(239, 237, 232, 0.65);
+  background: rgba(48, 48, 48, 0.54);
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  gap: 12px;
+  align-items: center;
+  z-index: 2;
+}
+
+.element2 span {
+  color: #fafaf9;
+  font-size: 1.5rem;
+  font-weight: 900;
+  letter-spacing: 0.3px;
+}
+
+.element2 .circle {
+  width: 40px;
+  height: 40px;
+  background: var(--tertiary-color);
+  border-radius: 50%;
 }
