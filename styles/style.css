@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+/* Shared Styles */
+* {
+  margin: 0;
+}
+
+.display-flex {
+  display: flex;
+}
+
+/* Navbar */
+.navbar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  color: #e6533c;
+  font-size: 2.25rem;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.nav-item {
+  list-style: none;
+    
+}
