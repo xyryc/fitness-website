@@ -35,6 +35,10 @@
   );
 }
 
+.background-black {
+  background-color: black;
+}
+
 .display-flex {
   display: flex;
 }
@@ -47,6 +51,7 @@
   font-weight: 600;
   border-radius: 42px;
   border: none;
+  cursor: pointer;
 }
 
 .btn-secondary {
@@ -57,11 +62,19 @@
   font-weight: 600;
   border-radius: 42px;
   border: 1px solid var(--primary-color);
+  cursor: pointer;
 }
 
 header {
   max-width: 100%;
   max-height: 700px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-align: center;
 }
 
 /* Navbar */
@@ -100,7 +113,7 @@ header {
   margin-right: 3rem;
 }
 
-.span {
+.home {
   color: var(--primary-color);
   background-color: var(--tertiary-color);
   padding: 8px 20px;
@@ -118,7 +131,7 @@ header {
 }
 
 .banner-content {
-  width: 520px;
+  max-width: 520px;
   margin-top: 96px;
   margin-bottom: 76px;
 }
@@ -131,7 +144,7 @@ header {
   margin-bottom: 1.75rem;
 }
 
-.banner-content span {
+.banner-title span {
   font-size: 10rem;
   line-height: 0.4;
   position: relative;
@@ -212,4 +225,163 @@ header {
   height: 40px;
   background: var(--tertiary-color);
   border-radius: 50%;
+}
+
+/* Habits section styles */
+.habits {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.habits-content {
+  max-width: 671px;
+  max-height: 120px;
+  margin-top: 100px;
+}
+
+.habits-content h1 {
+  margin-bottom: 14px;
+}
+
+.habits-description {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+
+.habits-cards {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 58px;
+  gap: 50px;
+}
+
+.habits-card {
+  max-width: 250px;
+}
+
+.habits-card-image {
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+}
+
+.habits-card-title {
+  margin-top: 20px;
+}
+
+.habits-card-description {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+/* team section styles */
+.team {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.team-content {
+  max-width: 671px;
+  max-height: 120px;
+}
+
+.team-description {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+}
+
+/* footer styles */
+.footer-top {
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px auto;
+}
+
+.fitness-container {
+  width: 450px;
+  border: 2px solid saddlebrown;
+}
+
+.get-started-1 {
+  border: 2px solid saddlebrown;
+}
+
+.get-started-2 {
+  border: 2px solid saddlebrown;
+}
+
+.footer-bottom{
+  text-align: center;
+  margin: 50px auto;
+}
+
+/* temp */
+.hide {
+  display: none;
+}
+
+/* Mobile Device */
+@media screen and (max-width: 576px) {
+  header {
+    max-height: 100%;
+  }
+
+  .banner {
+    flex-direction: column;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .btn-banner {
+    justify-content: center;
+  }
+
+  .btn-banner span {
+    display: none;
+  }
+
+  .banner-content {
+    max-width: 352px;
+  }
+
+  .btn-primary {
+    padding: 16px 40px;
+  }
+
+  .btn-secondary {
+    padding: 16px 20px;
+  }
+
+  .element1 {
+    top: 47px;
+    left: 194px;
+    max-width: 165px;
+    max-height: 100px;
+    font-size: 12px;
+  }
+
+  .element2 {
+    top: 271px;
+    left: 12px;
+    max-width: 190px;
+    max-height: 73px;
+    font-size: 12px;
+  }
 }
