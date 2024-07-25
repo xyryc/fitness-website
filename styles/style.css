@@ -288,6 +288,46 @@ header {
   margin-bottom: 100px;
 }
 
+.run-container {
+  padding: 30px 32px 29px 54px;
+  border-radius: 18px;
+  gap: 165px;
+  margin-bottom: 100px;
+}
+
+.run-content {
+  width: 443px;
+  text-align: left;
+}
+
+.run-content .title {
+  text-align: left;
+}
+
+.run-description {
+  color: var(--secondary-color);
+  font-size: 0.875rem;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  margin-top: 14px;
+  margin-bottom: 34px;
+}
+
+.running-guy {
+  height: 312px;
+  width: 366px;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.running-guy img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(2.6) translate(-60px, 35px);
+}
+
 /* team section styles */
 .team {
   justify-content: center;
@@ -308,10 +348,9 @@ header {
   letter-spacing: 0.3px;
   line-height: 24px;
   margin-top: 14px;
-
 }
 
-.team-grid-container{
+.team-grid-container {
   padding: 20px;
   border-radius: 18px;
   margin-top: 58px;
