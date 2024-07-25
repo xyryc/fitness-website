@@ -307,6 +307,61 @@ header {
   font-weight: 400;
   letter-spacing: 0.3px;
   line-height: 24px;
+  margin-top: 14px;
+
+}
+
+.team-grid-container{
+  padding: 20px;
+  border-radius: 18px;
+  margin-top: 58px;
+  margin-bottom: 88px;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team-member {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+
+.team-member img {
+  width: 326px;
+  height: 272px;
+  object-fit: cover;
+  filter: brightness(0.8);
+}
+
+.team-member .info {
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  padding: 16px;
+  text-align: left;
+}
+
+.team-member .info h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.team-member .info p {
+  margin: 5px 0 0;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--secondary-color);
 }
 
 /* footer styles */
