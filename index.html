@@ -126,7 +126,9 @@
           </p>
         </div>
 
-        <div class="bmi-calculator-container background-light-gray">
+        <div
+          class="bmi-calculator-container display-flex background-light-gray"
+        >
           <div class="bmi-calculator-chart">
             <h3 class="calculator-title">BMI Calculator Chart</h3>
 
@@ -158,23 +160,39 @@
             </table>
           </div>
           <div class="calculate-your-bmi">
-            <h3 class="calculator-title">Calculate your BMI</h3>
-            <p class="calculator-description">
-              We believe fitness should be accessible to everyone, everywhere,
-              regardless of income or access to a gym.
-            </p>
+            <div class="calculator-container">
+              <h3 class="calculator-title">Calculate your BMI</h3>
+              <p class="calculator-description">
+                We believe fitness should be accessible to everyone, everywhere,
+                regardless of income or access to a gym.
+              </p>
+            </div>
 
             <form action="" class="bmi-form">
-              <input type="number" name="" id="height" placeholder="Height/cm">
-              <input type="number" name="" id="weight" placeholder="Weight/kg"><br>
-              <input type="number" name="" id="age" placeholder="Age">
-              <select name="" id="sex">
-                <option value="Sex">Sex</option>
-                <option value="Sex">Male</option>
-                <option value="Sex">Female</option>
-              </select><br>
+              <div class="input-grid-view">
+                <input
+                  type="number"
+                  name=""
+                  id="height"
+                  placeholder="Height/cm"
+                />
+                <input
+                  type="number"
+                  name=""
+                  id="weight"
+                  placeholder="Weight/kg"
+                />
+                <input type="number" name="" id="age" placeholder="Age" />
+                <select name="" id="sex">
+                  <option value="Sex">Sex</option>
+                  <option value="Sex">Male</option>
+                  <option value="Sex">Female</option></select
+                >
+              </div>
               <select name="" id="activity">
-                <option value="Select an activity factor">Select an activity factor</option>
+                <option value="Select an activity factor">
+                  Select an activity factor
+                </option>
               </select>
             </form>
 

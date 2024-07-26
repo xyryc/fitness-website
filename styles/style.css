@@ -362,8 +362,6 @@ header {
 .bmi-calculator-container {
   width: 100%;
   gap: 175px;
-  display: flex;
-
   justify-content: center;
 }
 
@@ -373,7 +371,6 @@ header {
   font-weight: 900;
   margin-top: 52px;
 }
-
 
 .calculator-description {
   color: var(--secondary-color);
@@ -387,13 +384,15 @@ header {
 table {
   border-collapse: collapse;
   margin-top: 52px;
+  width: 310px;
 }
 
 table th,
 table td {
   text-align: left;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 15px;
+  padding: 13px;
+  padding-left: 18px;
 }
 
 table th {
@@ -419,6 +418,11 @@ select {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 1rem;
   font-weight: 500;
+}
+
+.input-grid-view{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 #height {
@@ -609,6 +613,19 @@ select {
     flex-direction: column;
   }
 
+  .banner-title {
+    width: 285px;
+    font-size: 2.25rem;
+  }
+
+  .banner-title span {
+    font-size: 5rem;
+  }
+
+  .banner-description {
+    width: 274px;
+  }
+
   .nav-links {
     display: none;
   }
@@ -648,4 +665,91 @@ select {
     max-height: 73px;
     font-size: 12px;
   }
+
+  .habits-content {
+    width: 338px;
+  }
+
+  .habits-content .title {
+    font-size: 2rem;
+  }
+
+  .habits-cards {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .run-container {
+    flex-direction: column;
+    max-width: 100%;
+    gap: 31px;
+    padding: 31px;
+  }
+
+  .run-content {
+    max-width: 287px;
+  }
+
+  .run-content .title {
+    font-size: 2rem;
+  }
+
+  .run-content button {
+    width: 287px;
+  }
+
+  .running-guy {
+    width: 100%;
+    height: 170px;
+  }
+
+  .running-guy img {
+    width: 100%;
+    transform: scale(1.5) translate(-30px, 25px);
+    object-fit: cover;
+    border-radius: 18px;
+  }
+
+  .bmi-container {
+    max-width: 90%;
+  }
+
+  .bmi-calculator-container {
+    flex-direction: column;
+    padding-left: 20px;
+    gap: 0px;
+  }
+
+  .bmi-calculator-chart .calculator-title {
+    max-width: 90%;
+  }
+
+  .bmi-container .title {
+    font-size: 2rem;
+  }
+
+  .calculator-container{
+    max-width: 100%;
+  }
+
+  .calculator-description{
+    max-width: 90%;
+  }
+
+  #height, #age{
+    width: 180px;
+  }
+
+  #weight{
+    width: 150px;
+  }
+
+  #sex{
+    width: 170px;
+  }
+
+  #activity{
+    width: 385px;
+  }
+
 }
