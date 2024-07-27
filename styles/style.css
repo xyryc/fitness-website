@@ -420,7 +420,7 @@ select {
   font-weight: 500;
 }
 
-.input-grid-view{
+.input-grid-view {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -531,8 +531,9 @@ select {
 
 /* footer styles */
 .footer-top {
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 125px;
   padding: 66px 190px 79px 190px;
 }
 
@@ -581,7 +582,7 @@ select {
 }
 
 .line {
-  padding: 0 290px;
+  padding: 0 200px;
   text-align: center;
 }
 
@@ -666,6 +667,7 @@ select {
     font-size: 12px;
   }
 
+  /* habits section */
   .habits-content {
     width: 338px;
   }
@@ -710,46 +712,102 @@ select {
     border-radius: 18px;
   }
 
+  /* bmi calculator styles */
   .bmi-container {
     max-width: 90%;
   }
 
   .bmi-calculator-container {
     flex-direction: column;
-    padding-left: 20px;
     gap: 0px;
   }
 
-  .bmi-calculator-chart .calculator-title {
+  .bmi-calculator-chart {
     max-width: 90%;
+    margin-left: 20px;
   }
 
   .bmi-container .title {
     font-size: 2rem;
   }
 
-  .calculator-container{
-    max-width: 100%;
+  .calculator-container {
+    margin-left: 20px;
   }
 
-  .calculator-description{
+  .calculator-description {
     max-width: 90%;
   }
 
-  #height, #age{
+  .bmi-form{
+    margin-left: 20px;
+  }
+
+  .calculator-button{
+    margin-left: 20px;
+  }
+
+  #height,
+  #age {
     width: 180px;
   }
 
-  #weight{
+  #weight {
     width: 150px;
   }
 
-  #sex{
+  #sex {
     width: 170px;
   }
 
-  #activity{
+  #activity {
     width: 385px;
   }
 
+  /* team styles */
+  .team-content {
+    max-width: 80%;
+  }
+
+  .team-content .title {
+    font-size: 2rem;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .hide-member {
+    display: none;
+  }
+
+  /* footer styles */
+  .footer-top {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    gap: 30px;
+    margin-left: 20px;
+    padding-top: 44px;
+  }
+
+  .fitness-container {
+    max-width: 300px;
+  }
+
+  .get-started-2{
+    margin-bottom: 72px;
+  }
+
+  .line {
+    padding: 0 40px;
+  }
+
+  .footer-bottom {
+    text-align: left;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 57px;
+    margin-left: 18px;
+    overflow-x: hidden;
+  }
 }
