@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #fitness-equipment {
+        padding: 60px 20px;
+        background-color: #f5f5f5;
+        text-align: center;
+        font-family: "Roboto", sans-serif;
+        color: #333;
+      }
+
+      #fitness-equipment .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      #fitness-equipment h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #3a3a3a;
+      }
+
+      #fitness-equipment p {
+        font-size: 1.2em;
+        margin-bottom: 40px;
+        line-height: 1.6;
+      }
+
+      .equipment-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+      }
+
+      .equipment {
+        background-color: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      .equipment:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      .equipment-img-wrapper {
+        overflow: hidden;
+      }
+
+      .equipment-img-wrapper img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s;
+      }
+
+      .equipment:hover .equipment-img-wrapper img {
+        transform: scale(1.1);
+      }
+
+      .equipment-content {
+        padding: 20px;
+        text-align: left;
+      }
+
+      .equipment-content h3 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+        color: #1e88e5;
+      }
+
+      .equipment-content p {
+        font-size: 1.1em;
+        margin-bottom: 10px;
+        color: #7f8c8d;
+      }
+
+      /* Media Queries for Responsiveness */
+      @media (min-width: 768px) {
+        .equipment-grid {
+          grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section id="fitness-equipment">
+      <div class="container">
+        <h2>Fitness Equipment</h2>
+        <p>
+          Discover the best fitness equipment to enhance your workouts. Learn
+          about their benefits and how to use them effectively.
+        </p>
+
+        <div class="equipment-grid">
+          <div class="equipment">
+            <div class="equipment-img-wrapper">
+              <img src="images/trainer6.png" alt="Dumbbells" />
+            </div>
+            <div class="equipment-content">
+              <h3>Dumbbells</h3>
+              <p>
+                Dumbbells are versatile weights that can be used for a variety
+                of exercises to build strength and muscle mass.
+              </p>
+            </div>
+          </div>
+
+          <div class="equipment">
+            <div class="equipment-img-wrapper">
+              <img src="images/trainer3.png" alt="Resistance Bands" />
+            </div>
+            <div class="equipment-content">
+              <h3>Resistance Bands</h3>
+              <p>
+                Resistance bands are great for strength training and flexibility
+                exercises, offering a portable and affordable workout option.
+              </p>
+            </div>
+          </div>
+
+          <div class="equipment">
+            <div class="equipment-img-wrapper">
+              <img src="images/trainer2.png" alt="Treadmill" />
+            </div>
+            <div class="equipment-content">
+              <h3>Treadmill</h3>
+              <p>
+                The treadmill is a popular cardio machine that allows you to
+                walk, jog, or run indoors, helping you improve your
+                cardiovascular health.
+              </p>
+            </div>
+          </div>
+
+          <!-- Add more equipment as needed -->
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
+
