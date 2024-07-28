@@ -128,6 +128,10 @@ header {
   margin-right: 47px;
 }
 
+.navbar i {
+  display: none;
+}
+
 /* Banner */
 .banner {
   justify-content: space-around;
@@ -631,6 +635,11 @@ select {
     display: none;
   }
 
+  .navbar i {
+    display: inline;
+    background: var(--primary-color);
+  }
+
   .btn-banner {
     justify-content: center;
   }
@@ -739,11 +748,11 @@ select {
     max-width: 90%;
   }
 
-  .bmi-form{
+  .bmi-form {
     margin-left: 20px;
   }
 
-  .calculator-button{
+  .calculator-button {
     margin-left: 20px;
   }
 
@@ -753,15 +762,15 @@ select {
   }
 
   #weight {
-    width: 150px;
+    width: 85%;
   }
 
   #sex {
-    width: 170px;
+    width: 95%;
   }
 
   #activity {
-    width: 385px;
+    width: 98%;
   }
 
   /* team styles */
@@ -794,7 +803,7 @@ select {
     max-width: 300px;
   }
 
-  .get-started-2{
+  .get-started-2 {
     margin-bottom: 72px;
   }
 
