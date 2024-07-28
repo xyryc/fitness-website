@@ -235,6 +235,10 @@ header {
   border-radius: 50%;
 }
 
+.element2 i {
+  display: none;
+}
+
 /* Habits section styles */
 .habits {
   flex-direction: column;
@@ -745,6 +749,15 @@ select {
     max-width: 190px;
     max-height: 73px;
     font-size: 12px;
+  }
+
+  .element2 i {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
   }
 
   /* habits section */
